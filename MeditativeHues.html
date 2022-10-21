@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meditative Hues</title>
+    <style>
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      div {
+        display: block;
+        margin: 0px auto;
+        border: 4px solid rgb(111, 71, 133);
+        max-width: 600px;
+        border-radius: 30px;
+        padding: 20px 40px;
+        box-shadow: 4px 4px 6px rgba(111, 71, 133, 0.8);
+        background: linear-gradient(
+          to top,
+          rgb(251, 194, 235) 0%,
+          rgb(166, 193, 238) 100%
+        );
+      }
+      h1 {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 48px;
+        border: 1px solid rgb(111, 71, 133);
+        border-radius: 8px;
+        padding: 10px;
+        margin: 15px auto;
+        box-shadow: 2px 2px 5px rgba(111, 71, 133, 0.5);
+        color: rgb(111, 71, 133);
+        background: #8fb1e9;
+      }
+      h2 {
+        padding: 5px;
+        text-align: center;
+        color: darkslateblue;
+      }
+      img {
+        display: block;
+        margin: 20px auto;
+        max-width: 100%;
+        max-height: 600px;
+        border-radius: 5%;
+      }
+      p {
+        line-height: 1.5;
+        text-align: justify;
+        margin: 30px 0;
+      }
+      button {
+        font-size: 18px;
+        display: block;
+        margin: 20px auto;
+        padding: 20px 35px;
+        color: rgb(111, 71, 133);
+        border: 1px solid rgb(111, 71, 133);
+        border-radius: 10px;
+        box-shadow: 4px 4px 6px rgba(111, 71, 133, 0.8);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        border: 1px solid rgb(111, 71, 133);
+        box-shadow: 4px 4px 6px rgba(111, 71, 133, 0.8);
+        font-size: 21px;
+        padding: 18px 22px;
+      }
+      strong {
+        color: rgb(111, 71, 133);
+      }
+      .read-more {
+        font-size: 13px;
+      }
+      .read-more:hover {
+        color: darkorchid;
+        text-decoration: underline;
+      }
+      .take-class {
+        font-size: 22px;
+        text-align: center;
+        color: darkorchid;
+      }
+      .footer {
+        text-align: center;
+        font-size: 15px;
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="meditative-painting">
+      <h1>My Meditative Hues</h1>
+
+      <h2>🎨 Painting as a meditation technique 🎨</h2>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/517/original/IMG_4761.jpeg?1653694153"
+        alt="Therapeutic-art"
+      />
+      <p class="description">
+        <em>Meditative Hues</em> is a creative meditation technique by painting, which is
+        a great example of meditation art—the main goal is to clear your mind of
+        everything except the paints, brushes, and paper in an effort to enter
+        into a meditative flow.<br /><br />
+
+        When you paint from this place, it is less about techniques and more
+        about letting go and just entering into the experience. This is a very
+        therapeutic way of painting. As someone who has struggled with anxiety,
+        it has quickly become my place of serenity. <br /><br />
+
+        So, to recap, <em>Meditative Hues</em> is being mindful and present while putting
+        paint on paper with or without a final vision in mind.
+      </p>
+      <a
+        href="https://www.washingtonpost.com/news/inspired-life/wp/2015/08/25/why-making-art-is-the-new-meditation/"
+        target="_blank"
+        class="read-more"
+      >
+        Read more
+      </a>
+
+      <p class="take-class" >
+        Looking for some creative Stress relief? <br />
+        Join a painting meditation class:<br />
+        <strong>🧘🏻‍♀️Meditative Hues 👩🏻‍🎨</strong>
+      
+        <button>🎨 Take the class 🖌</button>
+        <hr />
+      </p>
+
+      <p class="footer">
+        This page was built by
+        <a
+          href="https://www.instagram.com/laksh.ms/"
+          target="_blank"
+          class="coded-by"
+        >
+          Lakshmi M Satyananda</a
+        >
+        👩🏻‍🎨
+      </p>
+    </div>
+    <script>
+      function enrolClass() {
+        let fullName = prompt("What is your full name?");
+        let contact = prompt("What is contact email/phone nunmber?");
+        if (fullName !== "" && contact !== "") {
+          alert(
+            "Hi, " +
+              fullName +
+              "! Someone will contact you soon with the details of next meditative painting class."
+          );
+        } else {
+          alert("Please enter valid details.");
+        }
+      }
+      let takeClass = document.querySelector("button");
+      takeClass.addEventListener("click", enrolClass);
+    </script>
+  </body>
+</html>
