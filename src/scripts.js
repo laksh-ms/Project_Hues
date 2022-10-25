@@ -1,7 +1,14 @@
 function enrolClass() {
   let fullName = prompt("What is your full name?");
   let contact = prompt("What is contact email/phone nunmber?");
-  if (fullName !== "" && contact !== "") {
+  fullName = fullName.trim();
+  contact = contact.trim();
+  if (
+    fullName !== "" &&
+    contact !== "" &&
+    fullName !== null &&
+    contact !== null
+  ) {
     alert(
       "Hi, " +
         fullName +
